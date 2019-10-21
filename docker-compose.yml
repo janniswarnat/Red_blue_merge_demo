@@ -13,7 +13,5 @@ services:
     entrypoint: /CGAL/CGAL-4.6.3/demo/Red_blue_merge_demo/redblue
     environment:
       - DISPLAY=xserver:0.0
-      - QT_X11_NO_MITSHM=1
-      - QT_OPENGL=software
-      - LIBGL_ALWAYS_SOFTWARE=1
+
 
