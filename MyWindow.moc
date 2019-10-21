@@ -1,0 +1,173 @@
+/****************************************************************************
+** MyWindow meta object code from reading C++ file 'MyWindow.h'
+**
+** Created: Fri Apr 12 16:51:20 2013
+**      by: The Qt MOC ($Id: qt/moc_yacc.cpp   3.3.8   edited Feb 2 14:59 $)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#undef QT_NO_COMPAT
+#include "MyWindow.h"
+#include <qmetaobject.h>
+#include <qapplication.h>
+
+#include <private/qucomextra_p.h>
+#if !defined(Q_MOC_OUTPUT_REVISION) || (Q_MOC_OUTPUT_REVISION != 26)
+#error "This file was generated using the moc from 3.3.8b. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+const char *MyWindow::className() const
+{
+    return "MyWindow";
+}
+
+QMetaObject *MyWindow::metaObj = 0;
+static QMetaObjectCleanUp cleanUp_MyWindow( "MyWindow", &MyWindow::staticMetaObject );
+
+#ifndef QT_NO_TRANSLATION
+QString MyWindow::tr( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MyWindow", s, c, QApplication::DefaultCodec );
+    else
+	return QString::fromLatin1( s );
+}
+#ifndef QT_NO_TRANSLATION_UTF8
+QString MyWindow::trUtf8( const char *s, const char *c )
+{
+    if ( qApp )
+	return qApp->translate( "MyWindow", s, c, QApplication::UnicodeUTF8 );
+    else
+	return QString::fromUtf8( s );
+}
+#endif // QT_NO_TRANSLATION_UTF8
+
+#endif // QT_NO_TRANSLATION
+
+QMetaObject* MyWindow::staticMetaObject()
+{
+    if ( metaObj )
+	return metaObj;
+    QMetaObject* parentObject = QMainWindow::staticMetaObject();
+    static const QUParameter param_slot_0[] = {
+	{ "obj", &static_QUType_ptr, "CGAL::Object", QUParameter::In }
+    };
+    static const QUMethod slot_0 = {"get_new_object", 1, param_slot_0 };
+    static const QUMethod slot_1 = {"about", 0, 0 };
+    static const QUMethod slot_2 = {"aboutQt", 0, 0 };
+    static const QUMethod slot_3 = {"howto", 0, 0 };
+    static const QUMethod slot_4 = {"add_segment_tab", 0, 0 };
+    static const QUMethod slot_5 = {"remove_tab", 0, 0 };
+    static const QUMethod slot_6 = {"timer_done", 0, 0 };
+    static const QUParameter param_slot_7[] = {
+	{ "action", &static_QUType_ptr, "QAction", QUParameter::In }
+    };
+    static const QUMethod slot_7 = {"updateMode", 1, param_slot_7 };
+    static const QUParameter param_slot_8[] = {
+	{ "m", &static_QUType_ptr, "Mode", QUParameter::In }
+    };
+    static const QUMethod slot_8 = {"setMode", 1, param_slot_8 };
+    static const QUMethod slot_9 = {"update", 0, 0 };
+    static const QUMethod slot_10 = {"zooleft", 0, 0 };
+    static const QUMethod slot_11 = {"zoomout", 0, 0 };
+    static const QUMethod slot_12 = {"fit", 0, 0 };
+    static const QUMethod slot_13 = {"check", 0, 0 };
+    static const QUMethod slot_14 = {"fileOpen", 0, 0 };
+    static const QUParameter param_slot_15[] = {
+	{ "clear_flag", &static_QUType_bool, 0, QUParameter::In }
+    };
+    static const QUMethod slot_15 = {"fileOpen", 1, param_slot_15 };
+    static const QUMethod slot_16 = {"fileOpenSegment", 0, 0 };
+    static const QUMethod slot_17 = {"fileSave", 0, 0 };
+    static const QUMethod slot_18 = {"fileSaveAs", 0, 0 };
+    static const QUMethod slot_19 = {"random_in_square", 0, 0 };
+    static const QUMethod slot_20 = {"grid", 0, 0 };
+    static const QMetaData slot_tbl[] = {
+	{ "get_new_object(CGAL::Object)", &slot_0, QMetaData::Public },
+	{ "about()", &slot_1, QMetaData::Public },
+	{ "aboutQt()", &slot_2, QMetaData::Public },
+	{ "howto()", &slot_3, QMetaData::Public },
+	{ "add_segment_tab()", &slot_4, QMetaData::Public },
+	{ "remove_tab()", &slot_5, QMetaData::Public },
+	{ "timer_done()", &slot_6, QMetaData::Public },
+	{ "updateMode(QAction*)", &slot_7, QMetaData::Public },
+	{ "setMode(Mode)", &slot_8, QMetaData::Public },
+	{ "update()", &slot_9, QMetaData::Public },
+	{ "zooleft()", &slot_10, QMetaData::Public },
+	{ "zoomout()", &slot_11, QMetaData::Public },
+	{ "fit()", &slot_12, QMetaData::Public },
+	{ "check()", &slot_13, QMetaData::Public },
+	{ "fileOpen()", &slot_14, QMetaData::Public },
+	{ "fileOpen(bool)", &slot_15, QMetaData::Public },
+	{ "fileOpenSegment()", &slot_16, QMetaData::Public },
+	{ "fileSave()", &slot_17, QMetaData::Public },
+	{ "fileSaveAs()", &slot_18, QMetaData::Public },
+	{ "random_in_square()", &slot_19, QMetaData::Public },
+	{ "grid()", &slot_20, QMetaData::Public }
+    };
+    metaObj = QMetaObject::new_metaobject(
+	"MyWindow", parentObject,
+	slot_tbl, 21,
+	0, 0,
+#ifndef QT_NO_PROPERTIES
+	0, 0,
+	0, 0,
+#endif // QT_NO_PROPERTIES
+	0, 0 );
+    cleanUp_MyWindow.setMetaObject( metaObj );
+    return metaObj;
+}
+
+void* MyWindow::qt_cast( const char* clname )
+{
+    if ( !qstrcmp( clname, "MyWindow" ) )
+	return this;
+    return QMainWindow::qt_cast( clname );
+}
+
+bool MyWindow::qt_invoke( int _id, QUObject* _o )
+{
+    switch ( _id - staticMetaObject()->slotOffset() ) {
+    case 0: get_new_object((CGAL::Object)(*((CGAL::Object*)static_QUType_ptr.get(_o+1)))); break;
+    case 1: about(); break;
+    case 2: aboutQt(); break;
+    case 3: howto(); break;
+    case 4: add_segment_tab(); break;
+    case 5: remove_tab(); break;
+    case 6: timer_done(); break;
+    case 7: updateMode((QAction*)static_QUType_ptr.get(_o+1)); break;
+    case 8: setMode((Mode)(*((Mode*)static_QUType_ptr.get(_o+1)))); break;
+    case 9: update(); break;
+    case 10: zooleft(); break;
+    case 11: zoomout(); break;
+    case 12: fit(); break;
+    case 13: check(); break;
+    case 14: fileOpen(); break;
+    case 15: fileOpen((bool)static_QUType_bool.get(_o+1)); break;
+    case 16: fileOpenSegment(); break;
+    case 17: fileSave(); break;
+    case 18: fileSaveAs(); break;
+    case 19: random_in_square(); break;
+    case 20: grid(); break;
+    default:
+	return QMainWindow::qt_invoke( _id, _o );
+    }
+    return TRUE;
+}
+
+bool MyWindow::qt_emit( int _id, QUObject* _o )
+{
+    return QMainWindow::qt_emit(_id,_o);
+}
+#ifndef QT_NO_PROPERTIES
+
+bool MyWindow::qt_property( int id, int f, QVariant* v)
+{
+    return QMainWindow::qt_property( id, f, v);
+}
+
+bool MyWindow::qt_static_property( QObject* , int , int , QVariant* ){ return FALSE; }
+#endif // QT_NO_PROPERTIES

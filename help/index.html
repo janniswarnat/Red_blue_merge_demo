@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<title>Planar maps</title>
+</head>
+<body>
+<P align="center"><FONT size="5">How to use the demo</FONT></P>
+<br>
+This program demonstrates the implementation of a divide and conquer algorithm to compute
+a single cell in an arrangement of bounded line segments.
+
+<A name="ins"></A><h3>Insert segment</h3>
+First, press the "Insert" button. Left click the mouse to choose 
+the source point, move the mouse to determine the segment and close it with 
+another left click. 
+
+<A name="del"></A><h3>Delete segment</h3>
+Press the "Delete" button and left click any segment to remove it.
+
+<A name="loc"></A><h3>Set Point</h3>
+Press the "Set Point" button, and left click on any point not on any segment. The single face
+containing this point will be computed and highlighted. Right click the mouse in "Set Point" 
+mode to unset the point.
+
+<A name="degen"></A><h3>Check for degeneracies</h3>
+After inserting a set of line segments, click on the "Degenerate" button to check for some degeneracies
+which cannot be handled by this implementation. The full arrangement
+of the line segments is computed. The following conditions must hold:
+<br>
+<br>
+<LI>Every endpoint of an original line segment must have degree one.</LI>
+<LI>Every intersection of two original line segments must have degree four.</LI>
+<br>
+<br>
+Degenerate vertices are highlighted. 
+
+<A name ="grid"></A><h3>Grid</h3>
+A grid of line segments is a typical situation in which the complexity of the full arrangement
+of these line segments is quadratic. Click on the "Grid" button and choose the number
+of vertical segments to get a set of line segments forming a random grid.
+
+<A name ="random"></A><h3>Random</h3>
+Click on the "Random" button and choose the number of line segments to get a 
+random set of line segments. The endpoints of these line segments are randomly
+distributed inside a square which size depends on the chosen number of segments.
+ 
+<A name="format"></A><h3>File format</h3>
+Sets of bounded line segments can be read from and saved to files in the following simple format (# denotes comments):
+<br>
+<br>
+<UL>
+0 # (optional) the 0 signals, that a point_x is to be read in <br>
+1 1 # (optional) if the character in the first line is 0, read a point; in this case (1,1) <br>
+2 # number of segments <br>
+0 -10 0 10 # segment between (0,-10) and (0,10) <br>
+-10 0 10 0 # segment between (-10,0) and (10,0) <br>
+</UL>
+
+<br>
+<br>
+<hr> 
+</body>
+</html>
