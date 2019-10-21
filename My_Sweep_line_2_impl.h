@@ -1554,7 +1554,7 @@ template<class Arr, class Tr, class Subcv, class Evnt, typename Alloc>
         Point_2 end_overlap = this->m_traits->construct_max_vertex_2_object()(
             overlap_cv);
 
-        const std::pair<Event*, bool>& pair_res = _push_red_event(end_overlap,
+        const std::pair<Event*, bool>& pair_res = this->_push_red_event(end_overlap,
             Base_event::OVERLAP, ps_x_r, ps_y_r);
 
         right_end = pair_res.first;
@@ -1715,7 +1715,7 @@ template<class Arr, class Tr, class Subcv, class Evnt, typename Alloc>
         Point_2 end_overlap = this->m_traits->construct_max_vertex_2_object()(
             overlap_cv);
 
-        const std::pair<Event*, bool>& pair_res = _push_red_event(end_overlap,
+        const std::pair<Event*, bool>& pair_res = this->_push_red_event(end_overlap,
             Base_event::OVERLAP, ps_x_r, ps_y_r);
 
         right_end = pair_res.first;
