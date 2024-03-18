@@ -16,3 +16,13 @@ Configure and save configuration (see https://dev.to/darksmile92/run-gui-app-in-
 docker-compose up
 ```
 
+## Run on Mac
+
+Install XQuartz (https://www.xquartz.org/Support.html). Settings: "Allow connections from network clients".
+
+```bash
+export DISPLAY=":0"
+xhost +localhost
+docker-compose -f docker-compose_alternative_for_mac.yml up
+```
+
